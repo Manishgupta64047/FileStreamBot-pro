@@ -10,19 +10,19 @@ from Adarsh import StartTime
 START_TEXT = """ Your Telegram DC Is : `{}`  """
 
 
-@StreamBot.on_message(filters.regex("maintainers😎"))
+@StreamBot.on_message(filters.regex("maintainer"))
 async def maintainers(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Coded By [Adarsh Goel](https://github.com/adarsh-goel)",
+                    text="I am Devloped By [Lucifer](https://t.me/sigma_male_007)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Developer💻", url=f"https://github.com/adarsh-goel")
+                                InlineKeyboardButton("Developer💻", url=f"https://t.me/sigma_male_007")
                             ]
                         ]
                     ),
@@ -42,7 +42,7 @@ async def follow_user(b,m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("FOLLOW ME", url=f"https://GITHUB.COM/adarsh-goel")
+                                InlineKeyboardButton("24×7 MOVIES", url=f"https://t.me/blackest_harbour")
                             ]
                         ]
                     ),
@@ -93,13 +93,13 @@ async def stats(bot, update):
   cpuUsage = psutil.cpu_percent(interval=0.5)
   memory = psutil.virtual_memory().percent
   disk = psutil.disk_usage('/').percent
-  botstats = f'<b>Bot Uptime:</b> {currentTime}\n' \
-            f'<b>Total disk space:</b> {total}\n' \
-            f'<b>Used:</b> {used}  ' \
-            f'<b>Free:</b> {free}\n\n' \
-            f'📊Data Usage📊\n<b>Upload:</b> {sent}\n' \
-            f'<b>Down:</b> {recv}\n\n' \
-            f'<b>CPU:</b> {cpuUsage}% ' \
-            f'<b>RAM:</b> {memory}% ' \
-            f'<b>Disk:</b> {disk}%'
+  botstats = f'<b>Bot Uptime🔺:</b> {currentTime}\n' \
+            f'<b>Total 📀 space:</b> {total}\n' \
+            f'<b>Used⚡:</b> {used}  ' \
+            f'<b>Free🆓:</b> {free}\n\n' \
+            f'Data Usage📊\n<b>Upload:</b> {sent}\n' \
+            f'<b>Down📥:</b> {recv}\n\n' \
+            f'<b>CPU💠:</b> {cpuUsage}% ' \
+            f'<b>RAM🏮:</b> {memory}% ' \
+            f'<b>Disk💿:</b> {disk}%'
   await update.reply_text(botstats)
