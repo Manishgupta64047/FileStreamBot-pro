@@ -129,7 +129,7 @@ async def help_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("💁‍♂️ DEV", url="https://github.com/sigma_male,_007")],
-                [InlineKeyboardButton("📁Alt🤖, url="https://t.me/File_to_Direct_Download_Link_Bot")]
+                [InlineKeyboardButton("📁Alt🤖", url="https://t.me/File_to_Direct_Download_Link_Bot")]
             ]
         )
     )
